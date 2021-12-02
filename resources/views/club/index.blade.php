@@ -37,7 +37,7 @@
             </span>
             <span>
                 <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <a href="<?= url('home'); ?>" >LOGIN</a>
+                    <a href="/login" >LOGIN</a>
                 </button>
             </span>
         </div>

@@ -18,24 +18,17 @@ use Illuminate\Support\Facades\Route;
 }); */
 /* 
 Auth::routes(); */
-
-/* Route::get('/home', 'HomeController@index')->name('home');
+/*  */
+Route::get('/login', 'HomeController@index')->name('home');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
-*/
-/* Route::get('/home', 'HomeController@index')->name('home');
- */
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('products','ProductController');
 
 Route::get('/', function () {
     return view('club.index');
-});
-
-Route::get('/login', function () {
-    return view('welcome');
 });

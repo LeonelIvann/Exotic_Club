@@ -1,7 +1,12 @@
+<style>
+    .links{width: 100%; display: flex; justify-content: space-around; flex-direction: row;}
+</style>
+
 @extends('layouts.app')
 
 @section('content')
 <div class="container">
+    <div class="image-1"></div>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -13,8 +18,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
+                    <div class="links">
+                        <a href="products">MEMBER LIST</a>
+                    </div>
                 </div>
             </div>
         </div>
