@@ -1,0 +1,24 @@
+
+:root {
+    --animate-duration: 5800ms;
+    --animate-delay: 5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn-box2{
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 0px 0px;
+    transition: 1500ms;
+}
+.btn-box2:hover{
+    color: black;
+    padding: 5px 10px;
+    background-color: #ffffff85;
+    box-shadow: 1px 1px 2px 0px #ffffff29, -3px -2px 3px #ffffff2e;
+    transition: 1500ms;
+}

@@ -1,0 +1,53 @@
+@import "_fonts.scss";
+@import "_colores.scss";
+
+.container-img-1{
+    width: 100vw;
+    height: 100vh;
+}
+.image-1{
+    background-size: cover;
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.image-1 a{
+    position: absolute;
+    margin-top: 80vh;
+    font-size: 2rem;
+}
+.txt-img{
+    width: 100vw;
+    text-align: center;
+    font-size: 5rem;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    transition: 1400ms;
+    backdrop-filter: blur(4px);
+}
+.txt-img p{
+    color: white;
+    font-size: 2rem;
+    margin-top: 0px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (min-width: 425px){
+    .txt-img{
+        padding: 0px 5px;
+    }
+    .txt-img p{
+        padding: 0px 5px;
+    }
+}

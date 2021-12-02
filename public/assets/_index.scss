@@ -1,0 +1,38 @@
+// fuentes globales
+@import "_fonts.scss";
+@import "_img.scss";
+
+// colores globales
+@import "_colores.scss";
+
+// animaciones
+@import "_keyframes.scss";
+
+// responsive scss
+@import "_mediaquery.scss";
+
+// footer scss
+@import "_footer.scss";
+
+::-webkit-scrollbar { display: none; }
+
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+.separador{
+    height: 80px;
+    width: 100vw;
+}
+.container-segunda-fila{
+    color: white;
+}
+.btn-primary{
+    background-color: none ;
+    border-color: none ;
+    color: white;
+}
+.button:hover,a:hover{
+    color: white !important;
+}
