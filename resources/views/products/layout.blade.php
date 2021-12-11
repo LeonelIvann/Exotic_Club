@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel 7 CRUD Application - ItSolutionStuff.com</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
+    <title>Miembros</title>
+    {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">  --}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/club/style.css') }}" >
 </head>
-<body>
+<style>
+</style>
+<body class="bodyProducts">
   
-<div class="container">
+<div class="container container-products">
     @yield('content')
 </div>
    

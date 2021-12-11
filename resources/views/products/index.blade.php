@@ -1,11 +1,3 @@
-<style>
-    body{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        width: 100vw;
-        height: 80vh;}
-</style>
 
 @extends('products.layout')
  
@@ -13,11 +5,11 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Laravel 7 CRUD Example from scratch</h2>
+                <h2></h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('products.create') }}"> Create New Product</a>
-                <a href="/home">BACK TO HOME</a>
+                <a class="btn btn-success" href="{{ route('products.create') }}"> AGREGAR MIEMBRO</a>
+                <a class="btn-homeProducts" href="/home">VOLVER</a>
             </div>
         </div>
     </div>
@@ -29,28 +21,28 @@
     @endif
    
     <table class="table table-bordered">
-        <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Details</th>
-            <th width="280px">Action</th>
+        <tr class="title-th">
+            <th class="thOrden">Nº</th>
+            <th class="thMiembro">Miembro</th>
+            <th class="thDetail">DETALLES</th>
+            <th class="thOptions">OPCIONES</th>
         </tr>
         @foreach ($products as $product)
         <tr>
-            <td>{{ ++$i }}</td>
-            <td>{{ $product->name }}</td>
-            <td>{{ $product->detail }}</td>
+            <td class="idMiembro">{{ ++$i }}</td>
+            <td class="proName">{{ $product->name }}</td>
+            <td class="proDetail">{{ $product->detail }}</td>
             <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
    
-                    <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Show</a>
+                    <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Ver</a>
     
-                    <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
+                    <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Editar</a>
    
                     @csrf
                     @method('DELETE')
       
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
                 </form>
             </td>
         </tr>

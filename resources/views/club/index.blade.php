@@ -42,7 +42,7 @@
             </span>
         </div>
     </header>
-    <main class="main">
+    <main class="main" id="SUBIR">
         <div class="container-img-1">
             <div class="image-1">
                 <h2 class="txt-img animate__animated animate__fadeIn">
@@ -51,7 +51,7 @@
                         DE AUTOS DEPORTIVOS Y EXÓTICOS DE LATINOAMERICA<br>
                     </p>
                 </h2>
-                <a href="#segundo-objetivo" class="animate__animated animate__fadeInRight">BAJAR</a>
+                <a href="#segundo-objetivo" class="animate__animated animate__fadeIn">BAJAR</a>
             </div>
         </div>
         <div class="separador" id="segundo-objetivo"></div>
@@ -127,9 +127,13 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="container-divisiones-footer">
-                <div class="division-1"></div>
-                <div class="division-2"></div>
+            <div class="container-divisiones-footer animate__animated animate__fadeIn">
+                <div class="division-1">
+                    <a class="btnSubir" href="#SUBIR">SUBIR</a>
+                </div>
+                <div class="division-2">
+                    <p>recuerde, corre bajo su propio riesgo.</p>
+                </div>
             </div>
         </footer>
     </main>
